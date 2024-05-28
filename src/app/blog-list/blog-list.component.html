@@ -1,3 +1,8 @@
-<p>blog-list works!</p>
-Blog Sample <a routerLink = "/blog-post-component">HERE</a>
+
+<section class="post-list">
+    <app-blog-post
+    *ngFor="let blogPost of blogPostList"
+    [blogPost]="blogPost">
+</app-blog-post>
+</section>
 
